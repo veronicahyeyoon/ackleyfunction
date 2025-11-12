@@ -40,13 +40,13 @@ where recommended parameters are __$a=20$__, __$b=0.2$__, and __$c=2\pi$__, whic
 - Example 3D graph of ackley function plotted
 
 #### optimal minimal point generator
-- Optimal minimal point found by looping randomly generated x,y points and saving the [x,y,z] yielding the minimum z values. Output images of minima on the graph saved in graphimages folder. 
+- Uses a for loop that generates 5 random points and adds it to the points previously randomly generated. Appends the points to an empty list defined outside the loop. Takes the list and checks the z value of each x,y values, if z value is smaller than previous, defines it as a new minimum z, if not, returns nothing. Takes each redefined new minimum z and plots a 3D figure of it. Saves each figure in graphimages. 
 
 #### save as video
-- All output images in graphimages outputted as a single mp4 video. Can now visually track point on graph moving towards (0,0,0)!
+- All output images in graphimages outputted as a single mp4 video. Can now visually track point on graph moving towards (0,0,0).
 
 ### the end
 
 
 p.s.
-if you enjoy reading (and even if you don't) you should read arnold lobel's mouse soup <3
+book recs: arnold lobel's mouse soup <3
